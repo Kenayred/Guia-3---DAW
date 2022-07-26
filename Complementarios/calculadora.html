@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <div>
+            <form name="calcu">
+                <center>
+                <legend>CALCULADORA PERRONA</legend>
+                </center>
+                <center>
+                <p id="resul"></p>
+                </center>
+                <br>
+                <!-- PRIMER FILA DE BOTONES -->
+                <input type="button" value="Backspace" class="back" onclick="eliminar();">
+                <input type="reset" value="C" onclick="borrar();">
+                <br>
+                <!-- SEGUNDA FILA -->
+                <input type="button" id="7" value="7" onclick="numero('7');">
+                <input type="button" id="8" value="8" onclick="numero('8');">
+                <input type="button" id="9" value="9" onclick="numero('9');">
+                <input type="button" id="dividir" value="/" onclick="primero('/');">
+                <input type="button" id="pow" value="Pow" onclick="cuadrado();">
+                <br>
+                <!-- TERCER FILA -->
+                <input type="button" id="4" value="4" onclick="numero('4');">
+                <input type="button" id="5" value="5" onclick="numero('5');">
+                <input type="button" id="6" value="6" onclick="numero('6');">
+                <input type="button" id="multi" value="*" onclick="primero('*');">
+                <input type="button" id="raiz" value="Raiz" onclick="raizz();">
+                <br>
+                <!-- CUARTA FILA -->
+                <input type="button" id="1" value="1" onclick="numero('1');">
+                <input type="button" id="2" value="2" onclick="numero('2');">
+                <input type="button" id="3" value="3" onclick="numero('3');">
+                <input type="button" id="menos" value="-" onclick="primero('-');">
+                <input type="button" id="inversa" value="1/x" onclick="inversaa();">
+                <br>
+                <!-- QUINTA FILA -->
+                <input type="button" id="0" value="0" onclick="numero('0');">
+                <input type="button" value=" ">
+                <input type="button" id="." value="." onclick="punto();">
+                <input type="button" id="suma" value="+" onclick="primero('+');">
+                <input type="button" id="igual" value="=" onclick="resul();">
+            </form>
+        </div>
+        <script src="js/procesos.js"></script>
+    </body>
+</html>
